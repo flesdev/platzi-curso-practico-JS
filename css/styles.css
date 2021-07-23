@@ -119,3 +119,8 @@ footer ul li a:hover {
         padding: 0 40px;
     }
 }
+@media (max-width: 450px) {
+    main {
+        padding: 60px 10px;
+    }
+}
