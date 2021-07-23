@@ -21,10 +21,10 @@
             <div>
                 <h4>Cuadrado</h4>
                 <form action="">
-                    <p><label>Escribe cuánto mide cada lado de tu cuadrado.</label></p>
-                    <input type="number" placeholder="Escribe tu valor aquí">
-                    <button>Calcular el perímetro</button>
-                    <button>Calcular el área</button>
+                    <p><label for="inputCuadrado">Escribe cuánto mide cada lado de tu cuadrado.</label></p>
+                    <input id="inputCuadrado" type="number" placeholder="Escribe tu valor aquí">
+                    <button onclick="calcularPerimetroCuadrado()" type="button">Calcular el perímetro</button>
+                    <button onclick="calcularAreaCuadrado()" type="button">Calcular el área</button>
                 </form>
             </div>
         </section>
@@ -32,10 +32,10 @@
             <div>
                 <h4>Triángulo</h4>
                 <form action="">
-                    <p><label>Escribe cuánto mide cada lado de tu triágulo.</label></p>
-                    <input type="number" placeholder="Escribe tu valor aquí">
-                    <button>Calcular el perímetro</button>
-                    <button>Calcular el área</button>
+                    <p><label for="inputTriangulo">Escribe cuánto mide cada lado de tu triágulo.</label></p>
+                    <input id="inputTriangulo" type="number" placeholder="Escribe tu valor aquí">
+                    <button onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
+                    <button onclick="calcularAreaTriangulo()">Calcular el área</button>
                 </form>
             </div>
         </section>
@@ -43,10 +43,10 @@
             <div>
                 <h4>Círculo</h4>
                 <form action="">
-                    <p><label>Escribe cuánto mide el radio de tu círculo</label></p>
-                    <input type="number" placeholder="Escribe tu valor aquí">
-                    <button>Calcular el perímetro</button>
-                    <button>Calcular el área</button>
+                    <p><label for="inputCirculo">Escribe cuánto mide el radio de tu círculo</label></p>
+                    <input id="inputCirculo" type="number" placeholder="Escribe tu valor aquí">
+                    <button onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
+                    <button onclick="calcularAreaCirculo()">Calcular el área</button>
                 </form>
             </div>
         </section>
