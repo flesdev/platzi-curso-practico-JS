@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background-color: white;
+    text-align: center;
+}
+header h1 {
+    margin-top: 30px;
+    font-size: 4.2rem;
+    color: #FFC93C;
+}
+header h5 {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    color: #000000;
+}
+/* header p {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: #FFC93C;
+} */
+main {
+    width: 100%;
+    height: auto;
+    padding: 80px 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+section {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+section div {
+    width: 320px;
+    height: 330px;
+    border: 2px black solid;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FE9898;
+    box-shadow: 1px 5px 23px 8px rgba( 0,0,0,0.6);
+}
+section div h4 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #000000;
+}
+section div p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+}
+section div input {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 3px 8px;
+    background-color: rgba(255,255,255,0.1);
+}
+::placeholder {
+    color: black;
+}
+section div button {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #F5E79D;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 1.5rem;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    padding: 0 80px;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+footer ul li {
+    margin: 0 auto;
+    color: #000000;
+    font-size: 1.5rem;
+}
+footer ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    main {
+        padding: 80px 90px;
+    }
+    section div {
+        width: 300px;
+        height: 310px;
+        padding: 0 40px;
+    }
+}
