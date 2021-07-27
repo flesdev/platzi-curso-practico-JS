@@ -1,126 +1,165 @@
+:root {
+    /* COLORS */
+    --black: #0A1931;
+    --blue: #185ADB;
+    --yellow: #FFC947;
+    --white: #EFEFEF;
+}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
 }
 html {
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
-header {
-    background-color: white;
-    text-align: center;
+body {
+    background-color: var(--black);
+    margin: 0;
+    padding: 0;
 }
-header h1 {
-    margin-top: 30px;
-    font-size: 4.2rem;
-    color: #FFC93C;
-}
-header h5 {
-    margin-top: 30px;
-    font-size: 2.5rem;
-    color: #000000;
-}
-/* header p {
-    margin-top: 20px;
-    font-size: 1.8rem;
-    color: #FFC93C;
-} */
-main {
+.header {
     width: 100%;
-    height: auto;
-    padding: 80px 150px;
+    height: 80px;
+    background-color: var(--black);
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
-section {
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-}
-section div {
-    width: 320px;
-    height: 330px;
-    border: 2px black solid;
-    border-radius: 30px;
-    margin: 0 auto;
-    padding: 0 30px;
+.header .logo {
     display: flex;
-    flex-direction: column;
-    background-color: #FE9898;
-    box-shadow: 1px 5px 23px 8px rgba( 0,0,0,0.6);
+    align-items: center;
 }
-section div h4 {
-    text-align: center;
-    margin-top: 20px;
+.logo .p {
+    color: var(--white);
     font-size: 2rem;
-    color: #000000;
 }
-section div p {
-    font-size: 1.5rem;
-    text-align: center;
-    color: #000000;
-    margin-top: 20px;
-}
-section div input {
-    width: 100%;
-    height: 40px;
-    margin-top: 20px;
-    outline: none;
-    border: 1px solid #000000;
-    border-radius: 20px;
-    padding: 3px 8px;
-    background-color: rgba(255,255,255,0.1);
-}
-::placeholder {
-    color: black;
-}
-section div button {
-    width: 100%;
-    height: 40px;
-    margin-top: 20px;
-    background-color: #F5E79D;
-    border: 1px solid #000000;
-    border-radius: 20px;
-    color: #000000;
-    font-size: 1.5rem;
-}
-footer {
-    width: 100%;
-    height: 100px;
-    padding: 0 80px;
-}
-footer ul {
-    list-style: none;
+.header .navigator ul {
     display: flex;
-    flex-wrap: wrap;
-    font-weight: bold;
 }
-footer ul li {
-    margin: 0 auto;
-    color: #000000;
-    font-size: 1.5rem;
+.navigator ul li {
+    margin: 0 8px;
 }
-footer ul li a {
-    color: #000000;
-    text-decoration: none;
+.navigator ul li a {
+    color: var(--white);
+    font-size: 2rem;
 }
-footer ul li a:hover {
+.navigator ul li a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 900px) {
-    main {
-        padding: 80px 90px;
-    }
-    section div {
-        width: 300px;
-        height: 310px;
-        padding: 0 40px;
-    }
+.main {
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
 }
-@media (max-width: 450px) {
-    main {
-        padding: 60px 10px;
-    }
+.main__container {
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+}
+.main__text h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+.main__text i {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.main__text p {
+    margin-top: 50px;
+    font-size: 1.8rem;
+}
+.main__text p a:hover {
+    text-decoration: underline;
+}
+.figures {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 300px;
+    padding-top: 50px;
+}
+.cuacir {
+    font-size: 15rem;
+}
+.figures .tri {
+    font-size: 10rem;
+}
+.main__cards-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+.main__cards-container .container {
+    padding-top: 70px;
+}
+.main__cards-container .card {
+    width: 680px;
+    height: auto;
+    border: 4px var(--black) solid;
+    border-radius: 40px;
+    margin: 10px auto;
+    padding: 30px 70px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--yellow);
+}
+.card h3 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 3rem;
+    color: var(--black);
+}
+.card label {
+    font-size: 2rem;
+    color: var(--black);
+}
+.card .input {
+    padding: 3px 20px;
+    background-color: rgba(255,255,255,0.2);
+    color: var(--white);
+    border: 1px solid var(--black);
+}
+::placeholder {
+    color: var(--white);
+    letter-spacing: 0.1rem;
+}
+.card .input-button {
+    width: 100%;
+    height: 50px;
+    background-color: var(--black);
+    margin: 15px 0;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    color: var(--white);
+    letter-spacing: 0.1rem;
+    font-size: 1.8rem;
+}
+.footer {
+    width: 100%;
+    height: 150px;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.8rem;
+}
+.footer a {
+    color: var(--white);
+}
+.footer a:hover {
+    text-decoration: underline;
 }
