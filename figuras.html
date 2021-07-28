@@ -43,7 +43,7 @@
                     </g>
                 </svg>
             </i>
-            <p>Este es el primer Taller del <a href="https://platzi.com/cursos/javascript-practico/">Curso Práctico de JavaScript:</a></p>
+            <p>Este es el primer Taller del <a href="https://platzi.com/cursos/javascript-practico/">Curso Práctico de JavaScript, </a>donde podrás calcular las diferentes medidas de las principales figuras que conocemos, como lo son: El Cuadrado, El Triangulo y El Circulo.</p>
         </section>
 
         <section class="figures main__container">
@@ -70,10 +70,20 @@
                 <section class="card triangulo">
                     <h3>Triángulo</h3>
                     <form action="">
-                        <label for="inputTriangulo">Escribe cuánto mide cada lado de tu triágulo.</label>
-                        <input id="inputTriangulo" type="number" placeholder="Escribe tu valor aquí">
-                        <button onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
-                        <button onclick="calcularAreaTriangulo()">Calcular el área</button>
+                        <label for="inputTrianguloBase">Escribe cuánto mide la base de tu triágulo.</label>
+                        <input class="input input-button" id="inputTrianguloBase" type="number" placeholder="Escribe tu valor aquí">
+                        <label for="inputTrianguloAltura">Escribe cuánto mide la altura de tu triángulo.</label>
+                        <input class="input input-button" id="inputTrianguloAltura" type="number" placeholder="Escribe tu valor aquí">
+                        <label for="inputTrianguloLado">Escribe cuánto mide el lado de tu triángulo.</label>
+                        <input class="input input-button" id="inputTrianguloLado" type="number" placeholder="Escribe tu valor aquí">
+                        <label for="inputTrianguloLado2">Escribe cuánto mide el otro lado de tu triángulo.</label>
+                        <input class="input input-button" id="inputTrianguloLado2" type="number" placeholder="Escribe tu valor aquí">
+                        <button class="input-button" onclick="calcularAlturaTriangulo()">Calcular la altura</button>
+                        <p>*Introducir la medida de los 3 lados del triángulo</p>
+                        <button class="input-button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
+                        <p>*Introducir la medida de los 3 lados del triángulo</p>
+                        <button class="input-button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+                        <p>*Introducir la medida de la altura y la base del triángulo</p>
                     </form>
                 </section>
             </section>
@@ -93,9 +103,9 @@
         </section>
     </main>
     <footer class="footer">
-        <a href="https://github.com/lesterim">Github</a>
-        <p>©Copyright 2021</p>
-        <a href="https://platzi.com">Platzi</a>
+        <a class="github" href="https://github.com/lesterim">Github</a>
+        <p class="derechos">©Copyright 2021</p>
+        <a class="platzi" href="https://platzi.com">Platzi</a>
     </footer>
     <script src="./figuras.js"></script>
 </body>
