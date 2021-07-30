@@ -13,11 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <title>Porcentajes y Descuentos | Curso Práctico de JS</title>
 </head>
-<style>
-    input {
-        color: black;
-    }
-</style>
 <body>
     <header class="header">
         <div class="logo">
@@ -47,12 +42,26 @@
                     <input id="inputPrice" type="number" placeholder="Escribe tu valor aquí">
                     <label for="inputDiscount">¿Cuál es el porcentaje de descuento?</label>
                     <input id="inputDiscount" type="number" placeholder="Escribe tu valor aquí">
+                    <label for="inputDiscountCoupons">Añade un cupón de descuento</label>
+                    <input type="text" id="inputDiscountCoupons">
                     <button type="button" onclick="onClickButtonPriceDiscount()">Calcular precio con descuento</button>
-                    <p id="resultBox"></p>
+                    <p id="resultBox">Tu total a pagar será</p>
                 </form>
+            </section>
+            <section class="card">
+                <h2 class="card__title">Algunos cupones de descuento</h2>
+                <label class="label" for="">1.- <b>platzi</b> : Más 8% de descuento</label>
+                <label class="label" for="">2.- <b>basic</b> : Más 5% de descuento</label>
+                <label class="label" for="">3.- <b>expert</b> : Más 10% de descuento</label>
+                <label class="label" for="">4.- <b>expert+</b> : Más 12% de descuento</label>
             </section>
         </section>
     </main>
+    <footer class="footer">
+        <a class="github" href="https://github.com/lesterim">Github</a>
+        <p class="derechos">©Copyright 2021</p>
+        <a class="platzi" href="https://platzi.com">Platzi</a>
+    </footer>
     <script src="./descuentos.js"></script>
 </body>
 </html>
