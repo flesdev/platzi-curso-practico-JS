@@ -7,8 +7,8 @@ function calcularMediaAritmetica(list) {
     } */
 
     const sumaList = list.reduce(
-        function (valorAcumulado = 0, nuevoElemto) {
-            return valorAcumulado + nuevoElemto;
+        function (valorAcumulado = 0, nuevoElemento) {
+            return valorAcumulado + nuevoElemento;
         }
     )
 
