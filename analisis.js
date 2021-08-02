@@ -1,12 +1,4 @@
-const salariosPe = peru.map(
-    function (x) {
-        return x.salary;
-});
-
-const salariosOrdenados = salariosPe.sort(
-    function (x, y) {
-        return x - y;
-});
+// HELPERS
 
 function esPar (numero) {
     return (numero % 2 === 0);
@@ -30,6 +22,8 @@ function calcularMediaAritmetica(lista) {
     return promedio;
 }
 
+// CALCULADORA DE MEDIANA
+
 function medianaSalarios(lista) {
     const mitad = parseInt(lista.length / 2);
 
@@ -45,8 +39,31 @@ function medianaSalarios(lista) {
     }
 }
 
-const salariosGeneralesPe = medianaSalarios(salariosOrdenados)
+// MEDIANA GENERAL
 
-console.log(
-    medianaSalarios(salariosOrdenados)
-);
+const salariosPe = peru.map(
+    function (x) {
+        return x.salary;
+});
+
+const salariosOrdenados = salariosPe.sort(
+    function (x, y) {
+        return x - y;
+});
+
+const medianaGeneralPe = medianaSalarios(salariosOrdenados);
+
+// MEDIANA DEL TOP 10%
+
+const spliceStart = (salariosOrdenados.length * 90) / 100;
+const spliceCount = salariosOrdenados.length - spliceStart;
+
+const salariosTop10 = salariosOrdenados.splice(spliceStart, spliceCount);
+
+const medianaTop10Pe = medianaSalarios(salariosTop10);
+
+
+console.log({
+    medianaGeneralPe,
+    medianaTop10Pe
+});
