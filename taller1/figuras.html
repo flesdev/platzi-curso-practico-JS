@@ -7,11 +7,11 @@
     <meta name="robots" content="index.follow">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFC947">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0A1931">
-    <link rel="stylesheet" href="./css/figuras-styles.css">
+    <link rel="stylesheet" href="../css/figuras-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <title>Figuras geométricas | Curso Practico de JS</title>
+    <title>Geometric figures | Curso Practico de JS</title>
 </head>
 <body>
     <header class="header">
@@ -34,7 +34,7 @@
 
     <main class="main">
         <section class="main__text main__container">
-            <h1>Figuras Geométricas</h1>
+            <h1>Geometric Figures</h1>
             <i>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"viewBox="0 0 172 172" style=" fill:#ffffff;">
                     <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -45,7 +45,7 @@
                     </g>
                 </svg>
             </i>
-            <p>Este es el primer Taller del <a href="https://platzi.com/cursos/javascript-practico/">Curso Práctico de JavaScript, </a>donde podrás calcular las diferentes medidas de las principales figuras que conocemos, como lo son: El Cuadrado, El Triangulo y El Circulo.</p>
+            <p>This is the first ' Taller ' of '<a href="https://platzi.com/cursos/javascript-practico/"> Curso Práctico de JavaScript </a>'. Here you can calculate the main measures of the figures that we know, such as square, triangle and circle.</p>
         </section>
 
         <section class="figures main__container">
@@ -58,46 +58,46 @@
 
             <section id="cuadrado" class="container">
                 <section class="card">
-                    <h3>Cuadrado</h3>
+                    <h3>Square</h3>
                     <form action="">
-                        <label for="inputCuadrado">Escribe cuánto mide cada lado de tu cuadrado.</label>
-                        <input class="input input-button" id="inputCuadrado" type="number" placeholder="Escribe tu valor aquí">
-                        <button class="input-button" onclick="calcularPerimetroCuadrado()" type="button">Calcular el perímetro</button>
-                        <button class="input-button" onclick="calcularAreaCuadrado()" type="button">Calcular el área</button>
+                        <label for="inputCuadrado">Write how long each side of your square is.</label>
+                        <input class="input input-button" id="inputCuadrado" type="number" placeholder="put your value">
+                        <button class="input-button" onclick="calcularPerimetroCuadrado()" type="button">Calculate perimeter</button>
+                        <button class="input-button" onclick="calcularAreaCuadrado()" type="button">Calculate area</button>
                     </form>
                 </section>
             </section>
 
             <section id="triangulo" class="container">
                 <section class="card triangulo">
-                    <h3>Triángulo</h3>
+                    <h3>Triangle</h3>
                     <form action="">
-                        <label for="inputTrianguloBase">Escribe cuánto mide la base de tu triágulo.</label>
-                        <input class="input input-button" id="inputTrianguloBase" type="number" placeholder="Escribe tu valor aquí">
-                        <label for="inputTrianguloAltura">Escribe cuánto mide la altura de tu triángulo.</label>
-                        <input class="input input-button" id="inputTrianguloAltura" type="number" placeholder="Escribe tu valor aquí">
-                        <label for="inputTrianguloLado">Escribe cuánto mide el lado de tu triángulo.</label>
-                        <input class="input input-button" id="inputTrianguloLado" type="number" placeholder="Escribe tu valor aquí">
-                        <label for="inputTrianguloLado2">Escribe cuánto mide el otro lado de tu triángulo.</label>
-                        <input class="input input-button" id="inputTrianguloLado2" type="number" placeholder="Escribe tu valor aquí">
-                        <button class="input-button" onclick="calcularAlturaTriangulo()">Calcular la altura</button>
-                        <p>*Introducir la medida de los 3 lados del triángulo</p>
-                        <button class="input-button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
-                        <p>*Introducir la medida de los 3 lados del triángulo</p>
-                        <button class="input-button" onclick="calcularAreaTriangulo()">Calcular el área</button>
-                        <p>*Introducir la medida de la altura y la base del triángulo</p>
+                        <label for="inputTrianguloBase">Put the triangle base.</label>
+                        <input class="input input-button" id="inputTrianguloBase" type="number" placeholder="put your value">
+                        <label for="inputTrianguloAltura">Put the triangle height.</label>
+                        <input class="input input-button" id="inputTrianguloAltura" type="number" placeholder="put your value">
+                        <label for="inputTrianguloLado">Put the triangle side.</label>
+                        <input class="input input-button" id="inputTrianguloLado" type="number" placeholder="put your value">
+                        <label for="inputTrianguloLado2">Put the other triangle side.</label>
+                        <input class="input input-button" id="inputTrianguloLado2" type="number" placeholder="put your value">
+                        <button class="input-button" onclick="calcularAlturaTriangulo()">Calculate height</button>
+                        <p>*Put 3 triangle sides</p>
+                        <button class="input-button" onclick="calcularPerimetroTriangulo()">Calculate perimeter</button>
+                        <p>*Put 3 triangle sides</p>
+                        <button class="input-button" onclick="calcularAreaTriangulo()">Calculate area</button>
+                        <p>*Put the triangle height and base</p>
                     </form>
                 </section>
             </section>
 
             <section id="circulo" class="container">
                 <section class="card">
-                    <h3>Círculo</h3>
+                    <h3>Circle</h3>
                     <form action="">
-                        <label for="inputCirculo">Escribe cuánto mide el radio de tu círculo</label>
-                        <input class="input input-button" id="inputCirculo" type="number" placeholder="Escribe tu valor aquí">
-                        <button class="input-button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
-                        <button class="input-button" onclick="calcularAreaCirculo()">Calcular el área</button>
+                        <label for="inputCirculo">Put the circle radio</label>
+                        <input class="input input-button" id="inputCirculo" type="number" placeholder="put your value">
+                        <button class="input-button" onclick="calcularPerimetroCirculo()">Calculate perimeter</button>
+                        <button class="input-button" onclick="calcularAreaCirculo()">Calculate area</button>
                     </form>
                 </section>
             </section>
@@ -106,7 +106,7 @@
     </main>
     <footer class="footer">
         <a class="github" href="https://github.com/lesterim">Github</a>
-        <p class="derechos">© 2021</p>
+        <p class="derechos">©Copyright 2021</p>
         <a class="platzi" href="https://platzi.com">Platzi</a>
     </footer>
     <script src="./figuras.js"></script>
