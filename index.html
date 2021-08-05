@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index.follow">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFC947">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0A1931">
-    <link rel="stylesheet" href="./css/descuentos.css">
+    <!-- tab icon -->
+    <link rel="icon" href="./assets/yellow-cat.png" type="image/png"/>
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- font style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <title>Porcentajes y Descuentos | Curso Práctico de JS</title>
+    <title>flimMath | Your tool for math</title>
 </head>
 <body>
     <header class="header">
@@ -25,36 +26,34 @@
         </div>
         <nav class="navigator">
             <ul>
-                <li><a href="https://lesterim.github.io/platzi-curso-practico-JS/figuras.html">Home</a></li>
+                <li><a href="https://lesterim.github.io/platzi-curso-practico-JS/index.html">Home</a></li>
                 <li><a href="https://github.com/lesterim/platzi-curso-practico-JS">Github</a></li>
                 <li><a href="https://linktr.ee/lesterim">@lesterim</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <section class="main__container">
-            <h1>Porcentajes y Descuentos</h1>
-            <p>Este es el segundo Taller del Curso Práctico de JavaScript, donde podrás calcular el valor de descuento por la compra de tus productos.</p>
-            <section class="card">
-                <h2 class="card__title">Calcula el precio de tus productos</h2>
-                <form action="">
-                    <label for="inputPrice">¿Cuál es el precio de tu producto?</label>
-                    <input id="inputPrice" type="number" placeholder="Escribe tu valor aquí">
-                    <label for="inputDiscount">¿Cuál es el porcentaje de descuento?</label>
-                    <input id="inputDiscount" type="number" placeholder="Escribe tu valor aquí">
-                    <label for="inputDiscountCoupons">Añade un cupón de descuento</label>
-                    <input type="text" id="inputDiscountCoupons">
-                    <button type="button" onclick="onClickButtonPriceDiscount()">Calcular precio con descuento</button>
-                    <p id="resultBox">Tu total a pagar será</p>
-                </form>
-            </section>
-            <section class="card">
-                <h2 class="card__title">Algunos cupones de descuento</h2>
-                <label class="label" for="">1.- <b>platzi</b> : Más 8% de descuento</label>
-                <label class="label" for="">2.- <b>basic</b> : Más 5% de descuento</label>
-                <label class="label" for="">3.- <b>expert</b> : Más 10% de descuento</label>
-                <label class="label" for="">4.- <b>expert+</b> : Más 12% de descuento</label>
-            </section>
+        <section class="container">
+            <div class="main__item">
+                <h2>Figuras Geometricas</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ab nihil dolorem iste vel saepe rerum aliquam tenetur cum alias cupiditate, illum vero ratione dolore molestiae. Similique nemo nesciunt ipsa.</p>
+                <a href="./taller1/figuras.html">Calcular</a>
+            </div>
+            <div class="main__item">
+                <h2>Descuentos</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ab nihil dolorem iste vel saepe rerum aliquam tenetur cum alias cupiditate, illum vero ratione dolore molestiae. Similique nemo nesciunt ipsa.</p>
+                <a href="./taller2/descuentos.html">Calcular</a>
+            </div>
+            <div class="main__item">
+                <h2>Medidas de Tendencia Central</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ab nihil dolorem iste vel saepe rerum aliquam tenetur cum alias cupiditate, illum vero ratione dolore molestiae. Similique nemo nesciunt ipsa.</p>
+                <a href="./taller3/media.html">Calcular</a>
+            </div>
+            <div class="main__item">
+                <h2>Interactuando con Datos</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ab nihil dolorem iste vel saepe rerum aliquam tenetur cum alias cupiditate, illum vero ratione dolore molestiae. Similique nemo nesciunt ipsa.</p>
+                <a href="./taller4/salarios.html">Calcular</a>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -62,6 +61,5 @@
         <p class="derechos">©Copyright 2021</p>
         <a class="platzi" href="https://platzi.com">Platzi</a>
     </footer>
-    <script src="./descuentos.js"></script>
 </body>
 </html>
