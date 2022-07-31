@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+:root {
+    --black: #2C3333;
+    --white: #E7F6F2;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    transition: background-color .5s;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 0 20px;
+    border-bottom: 1px solid var(--black);
+}
+.header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo__icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("https://img.icons8.com/ios-glyphs/60/2C3333/cat-profile--v1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo__text {
+    font-size: 2.4rem;
+}
+.header .nav {
+    width: auto;
+    height: auto;
+}
+.header .nav__list-box {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+.header .nav__list-box li a {
+    font-size: 1.6rem;
+    color: var(--black);
+}
+.header .nav__list--home {
+    border-bottom: 2px solid #2C3333;
+}
+.header .nav__list-item:hover {
+    border-bottom: 1px solid #2C3333;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    padding: 30px 0 5px;
+    position: relative;
+}
+.main__moon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-image: url("https://img.icons8.com/ios-glyphs/60/000000/moon-symbol.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.main__container {
+    max-width: 750px;
+    height: auto;
+    margin: 0 auto;
+}
+.main__card {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid var(--black);
+}
+.main .imageOne {
+    background-image: url("https://images.pexels.com/photos/7827950/pexels-photo-7827950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.main .imageTwo {
+    background-image: url("https://images.pexels.com/photos/5650026/pexels-photo-5650026.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.main .imageThree {
+    background-image: url("https://images.pexels.com/photos/6256258/pexels-photo-6256258.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+.main .imageFour {
+    background-image: url("https://images.pexels.com/photos/4968663/pexels-photo-4968663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.card__image {
+    width: 300px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--black);
+}
+.card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.content__tittle {
+    max-width: 200px;
+    font-size: 2rem;
+    text-align: center;
+}
+.content__paragraph {
+    max-width: 300px;
+    font-size: 1.5rem;
+}
+.content__button p {
+    width: 200px;
+    height: 50px;
+    font-size: 2rem;
+    font-weight: 800;
+    padding-top: 8px;
+    border-radius: 25px;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--white);
+    border-top: 1px solid var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__container {
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+.footer__container a {
+    color: var(--black);
+}

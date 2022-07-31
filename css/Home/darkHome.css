@@ -1,0 +1,62 @@
+body.dark .header {
+    background-color: #2C3333;
+    border-bottom: 1px solid #E7F6F2;
+}
+body.dark .logo__icon {
+    background-image: url("https://img.icons8.com/ios-glyphs/60/E7F6F2/cat-profile--v1.png");
+}
+body.dark .logo__text {
+    color: #E7F6F2;
+}
+body.dark .header .nav__list-box li a {
+    color: var(--white);
+}
+body.dark .header .nav__list--home {
+    border-bottom: 2px solid #E7F6F2;
+}
+body.dark .header .nav__list-item:hover {
+    border-bottom: 1px solid #E7F6F2;
+}
+
+body.dark .main {
+    background-color: #2C3333;
+}
+body.dark .main__moon {
+    background-image: url("https://img.icons8.com/ios-glyphs/60/E7F6F2/moon-symbol.png");
+}
+body.dark .main__card {
+    border: 1px solid #E7F6F2;
+}
+body.dark .content__tittle {
+    color: var(--white);
+}
+body.dark .content__paragraph {
+    color: var(--white);
+}
+body.dark .main .imageOne {
+    background-image: url("https://images.pexels.com/photos/7827950/pexels-photo-7827950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+body.dark .main .imageTwo {
+    background-image: url("https://images.pexels.com/photos/5650026/pexels-photo-5650026.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+body.dark .main .imageThree {
+    background-image: url("https://images.pexels.com/photos/6256258/pexels-photo-6256258.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+body.dark .main .imageFour {
+    background-image: url("https://images.pexels.com/photos/4968663/pexels-photo-4968663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+body.dark .card__image {
+    border: 1px solid #E7F6F2;
+}
+body.dark .content__button p {
+    background-color: #E7F6F2;
+    color: #2C3333;
+}
+
+body.dark .footer {
+    background-color: #2C3333;
+    border-top: 1px solid #E7F6F2;
+}
+body.dark .footer__container a {
+    color: var(--white);
+}
